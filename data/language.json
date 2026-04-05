@@ -1,0 +1,900 @@
+{
+  "🇳🇱 Nederlands": {
+    "tab_log": "Log Builder",
+    "tab_history": "Geschiedenis",
+    "tab_settings": "Instellingen",
+
+    "customer": "Klant",
+    "customer_placeholder": "Klant naam...",
+    "config_editor": "⚙️ Configuratie editor ⚙️ ",
+    "type": "Type",
+    "title": "Titel",
+    "category": "Categorie",
+    "subcategory": "Subcategorie",
+
+    "search": "Zoek acties",
+    "suggestions": "Suggesties",
+
+    "notes": "Notities",
+    "links": "Links",
+
+    "generate": "Genereer",
+    "generated_log": "Log Genereer",
+    "copy_save": "Kopie + Opslaan",
+    "export": "Exporteren",
+    "clear": "Wis",
+    "add": "➕ Voeg toe",
+    "pin": "⭐ Pin",
+
+    "actions": "Acties",
+    "always_on_top": "📌 Altijd boven",
+    "autosave": "💾 Auto-Opslaan ",
+    "language": "🌍 Taal",
+    "theme": "🎨 Thema",
+    "theme_light": "Ligt",
+    "open_config": "⚙️ Open Configuratie Editor",
+    "theme_dark": "Donker",
+    "theme_hacker": "Hacker",
+    "theme_blue": "Blauw",
+    "theme_green": "Groen",
+    "theme_pink": "Roze",
+    "error": "Fout",
+    "config_missing": "config.json ontbreekt!",
+    "config_save_error": "Config kon niet opgeslagen worden",
+    "categories": "Categorieën",
+    "subcategories": "Subcategorieën",
+    "customers": "Klanten",
+    "tags": "Tags",
+    "new_action": "Nieuwe actie",
+    "add_category": "➕ Categorie toevoegen",
+    "remove_category": "❌ Categorie verwijderen",
+
+    "add_subcategory": "➕ Subcategorie toevoegen",
+    "remove_subcategory": "❌ Subcategorie verwijderen",
+
+    "add_action": "➕ Actie toevoegen",
+    "remove_action": "❌ Actie verwijderen",
+
+    "add_customer": "➕ Klant toevoegen",
+    "remove_customer": "❌ Klant verwijderen",
+
+    "add_link": "➕ Link toevoegen",
+    "remove_link": "❌ Link verwijderen",
+
+    "add_tag": "➕ Tag toevoegen",
+    "remove_tag": "❌ Tag verwijderen",
+
+    "new_category": "Nieuwe categorie",
+    "new_subcategory": "Nieuwe subcategorie",
+    "new_customer": "Nieuwe klant",
+    "new_tag": "Nieuwe tag",
+
+    "search_customer": "🔍 Zoek klant...",
+    "link_name": "Link naam",
+    "link_url": "Link URL",
+
+    "exists": "Bestaat al",
+    "already_exists": "Bestaat al",
+    "select_category": "Selecteer eerst een categorie",
+    "select_category_sub": "Selecteer categorie en subcategorie",
+    "warning": "Waarschuwing",
+    "no_customer": "Geen klant geselecteerd!",
+    "no_log": "Geen log beschikbaar",
+    "exists": "Bestaat",
+    "error": "Fout",
+
+    "category_exists": "Categorie bestaat al",
+    "no_customer": "No customer selected!",
+    "no_log_available": "Geen log om te kopiëren",
+
+    "category_exists": "Categorie bestaat al",
+    "subcategory_exists": "Subcategorie bestaat al",
+    "action_exists": "Actie bestaat al",
+    "tag_exists": "Tag bestaat al",
+    "customer_exists": "Klant bestaat al",
+
+    "select_category": "Selecteer eerst een categorie",
+    "select_category_subcategory": "Selecteer categorie en subcategorie",
+    "on": "AAN",
+    "off": "UIT"
+  },
+  "🇬🇧 Engels": {
+    "tab_log": "Log Builder",
+    "tab_history": "History",
+    "tab_settings": "Settings",
+    "config_editor": "⚙️ Config editor ⚙️ ",
+    "customer": "Customer",
+    "customer_placeholder": "Customer name...",
+
+    "type": "Type",
+    "title": "Title",
+    "category": "Category",
+    "subcategory": "Subcategory",
+
+    "search": "Search actions",
+    "suggestions": "Suggestions",
+
+    "notes": "Notes",
+    "links": "Links",
+
+    "generate": "Generate",
+    "generated_log": "Log generated",
+    "copy_save": "Copy + Save",
+    "export": "Export",
+    "clear": "Clear",
+    "add": "➕ Add",
+    "pin": "⭐ Pin",
+
+    "actions": "Actions",
+    "always_on_top": "📌 Always on Top",
+    "autosave": "💾 Auto-save",
+    "open_config": "⚙️ Open Config Editor",
+    "language": "🌍 Language",
+    "theme": "🎨 Theme",
+    "theme_light": "Light",
+    "theme_dark": "Dark",
+    "theme_hacker": "Hacker",
+    "theme_blue": "Blue",
+    "theme_green": "Green",
+    "theme_pink": "Pink",
+    "error": "Error",
+    "config_missing": "config.json is missing!",
+    "config_save_error": "Config can't be saved",
+    "categories": "Categories",
+    "subcategories": "Subcategories",
+    "customers": "Customers",
+    "tags": "Tags",
+    "new_action": "New action",
+    "add_category": "➕ Add Category",
+    "remove_category": "❌ Remove Category",
+
+    "add_subcategory": "➕ Add Subcategory",
+    "remove_subcategory": "❌ Remove Subcategory",
+
+    "add_action": "➕ Add Action",
+    "remove_action": "❌ Remove Action",
+
+    "add_customer": "➕ Add Customer",
+    "remove_customer": "❌ Remove Customer",
+
+    "add_link": "➕ Add Link",
+    "remove_link": "❌ Remove Link",
+
+    "add_tag": "➕ Add Tag",
+    "remove_tag": "❌ Remove Tag",
+
+    "new_category": "New category",
+    "new_subcategory": "New subcategory",
+    "new_customer": "New customer",
+    "new_tag": "New tag",
+
+    "search_customer": "🔍 Search customer...",
+    "link_name": "Link name",
+    "link_url": "Link URL",
+
+    "exists": "Already exists",
+    "already_exists": "Already exists",
+    "select_category": "Select a category first",
+    "select_category_sub": "Select category and subcategory",
+    "warning": "Warning",
+
+    "no_log": "No log available",
+
+    "exists": "Exists",
+    "error": "Error",
+
+    "category_exists": "Category already exists",
+    "no_customer": "No customer selected!",
+    "no_log_available": "No log available to copy",
+
+    "subcategory_exists": "Subcategory already exists",
+    "action_exists": "Action already exists",
+    "tag_exists": "Tag already exists",
+    "customer_exists": "Customer already exists",
+
+    "select_category": "Please select a category first",
+    "select_category_subcategory": "Please select category and subcategory",
+    "on": "ON",
+    "off": "OFF"
+  },
+    "🇫🇷 Français": {
+    "tab_log": "Création de log",
+    "tab_history": "Historique",
+    "tab_settings": "Paramètres",
+
+    "customer": "Client",
+    "customer_placeholder": "Nom du client...",
+    "config_editor": "⚙️ Éditeur de configuration ⚙️ ",
+    "type": "Type",
+    "title": "Titre",
+    "category": "Catégorie",
+    "subcategory": "Sous-catégorie",
+
+    "search": "Rechercher des actions",
+    "suggestions": "Suggestions",
+
+    "notes": "Notes",
+    "links": "Liens",
+
+    "generate": "Générer",
+    "generated_log": "Log généré",
+    "copy_save": "Copier + Enregistrer",
+    "export": "Exporter",
+    "clear": "Effacer",
+    "add": "➕ Ajouter",
+    "pin": "⭐ Favori",
+
+    "actions": "Actions",
+    "always_on_top": "📌 Toujours au premier plan",
+    "autosave": "💾 Sauvegarde automatique",
+    "open_config": "⚙️ Ouvrir l’éditeur de configuration",
+    "language": "🌍 Langue",
+    "theme": "🎨 Thème",
+    "theme_light": "Clair",
+    "theme_dark": "Sombre",
+    "theme_hacker": "Hacker",
+    "theme_blue": "Bleu",
+    "theme_green": "Vert",
+    "theme_pink": "Rose",
+
+    "error": "Erreur",
+    "config_missing": "config.json est manquant !",
+    "config_save_error": "Impossible d’enregistrer la configuration",
+
+    "category_exists": "La catégorie existe déjà",
+    "no_customer": "Aucun client sélectionné !",
+    "no_log_available": "Aucun log disponible à copier",
+
+    "categories": "Catégories",
+    "subcategories": "Sous-catégories",
+    "customers": "Clients",
+    "tags": "Tags",
+    "new_action": "Nouvelle action",
+    "add_category": "➕ Ajouter une catégorie",
+    "remove_category": "❌ Supprimer la catégorie",
+
+    "add_subcategory": "➕ Ajouter une sous-catégorie",
+    "remove_subcategory": "❌ Supprimer la sous-catégorie",
+
+    "add_action": "➕ Ajouter une action",
+    "remove_action": "❌ Supprimer l’action",
+
+    "add_customer": "➕ Ajouter un client",
+    "remove_customer": "❌ Supprimer le client",
+
+    "add_link": "➕ Ajouter un lien",
+    "remove_link": "❌ Supprimer le lien",
+
+    "add_tag": "➕ Ajouter un tag",
+    "remove_tag": "❌ Supprimer le tag",
+
+    "new_category": "Nouvelle catégorie",
+    "new_subcategory": "Nouvelle sous-catégorie",
+    "new_customer": "Nouveau client",
+    "new_tag": "Nouveau tag",
+
+    "search_customer": "🔍 Rechercher un client...",
+    "link_name": "Nom du lien",
+    "link_url": "URL du lien",
+
+    "exists": "Existe déjà",
+    "already_exists": "Existe déjà",
+    "select_category": "Sélectionnez d’abord une catégorie",
+    "select_category_sub": "Sélectionnez une catégorie et une sous-catégorie",
+    "warning": "Avertissement",
+    "no_customer": "Aucun client sélectionné !",
+    "no_log": "Aucun log disponible",
+
+    "category_exists": "La catégorie existe déjà",
+    "subcategory_exists": "La sous-catégorie existe déjà",
+    "action_exists": "L’action existe déjà",
+    "tag_exists": "Le tag existe déjà",
+    "customer_exists": "Le client existe déjà",
+
+    "select_category": "Sélectionnez d’abord une catégorie",
+    "select_category_subcategory": "Sélectionnez une catégorie et une sous-catégorie",
+
+    "on": "ON",
+    "off": "OFF"
+  },
+  "🇩🇪 Deutsch": {
+    "tab_log": "Log erstellen",
+    "tab_history": "Verlauf",
+    "tab_settings": "Einstellungen",
+    "config_editor": "⚙️ Konfigurationseditor ⚙️ ",
+    "customer": "Kunde",
+    "customer_placeholder": "Kundenname...",
+
+    "type": "Typ",
+    "title": "Titel",
+    "category": "Kategorie",
+    "subcategory": "Unterkategorie",
+
+    "search": "Aktionen suchen",
+    "suggestions": "Vorschläge",
+
+    "notes": "Notizen",
+    "links": "Links",
+
+    "generate": "Generieren",
+    "generated_log": "Log erstellt",
+    "copy_save": "Kopieren + Speichern",
+    "export": "Exportieren",
+    "clear": "Zurücksetzen",
+    "add": "➕ Hinzufügen",
+    "pin": "⭐ Favorit",
+
+    "actions": "Aktionen",
+    "always_on_top": "📌 Immer im Vordergrund",
+    "autosave": "💾 Automatisch speichern",
+    "open_config": "⚙️ Konfigurationseditor öffnen",
+    "language": "🌍 Sprache",
+    "theme": "🎨 Design",
+    "theme_light": "Hell",
+    "theme_dark": "Dunkel",
+    "theme_hacker": "Hacker",
+    "theme_blue": "Blau",
+    "theme_green": "Grün",
+    "theme_pink": "Pink",
+
+    "error": "Fehler",
+    "config_missing": "config.json fehlt!",
+    "config_save_error": "Konfiguration konnte nicht gespeichert werden",
+
+    "category_exists": "Kategorie existiert bereits",
+    "no_customer": "Kein Kunde ausgewählt!",
+    "no_log_available": "Kein Log zum Kopieren verfügbar",
+
+    "categories": "Kategorien",
+    "subcategories": "Unterkategorien",
+    "customers": "Kunden",
+    "tags": "Tags",
+    "new_action": "Neue Aktion",
+    "add_category": "➕ Kategorie hinzufügen",
+    "remove_category": "❌ Kategorie entfernen",
+
+    "add_subcategory": "➕ Unterkategorie hinzufügen",
+    "remove_subcategory": "❌ Unterkategorie entfernen",
+
+    "add_action": "➕ Aktion hinzufügen",
+    "remove_action": "❌ Aktion entfernen",
+
+    "add_customer": "➕ Kunde hinzufügen",
+    "remove_customer": "❌ Kunde entfernen",
+
+    "add_link": "➕ Link hinzufügen",
+    "remove_link": "❌ Link entfernen",
+
+    "add_tag": "➕ Tag hinzufügen",
+    "remove_tag": "❌ Tag entfernen",
+
+    "new_category": "Neue Kategorie",
+    "new_subcategory": "Neue Unterkategorie",
+    "new_customer": "Neuer Kunde",
+    "new_tag": "Neuer Tag",
+
+    "search_customer": "🔍 Kunde suchen...",
+    "link_name": "Linkname",
+    "link_url": "Link-URL",
+
+    "exists": "Existiert bereits",
+    "already_exists": "Existiert bereits",
+    "select_category": "Bitte zuerst eine Kategorie wählen",
+    "select_category_sub": "Kategorie und Unterkategorie auswählen",
+    "warning": "Warnung",
+    "no_customer": "Kein Kunde ausgewählt!",
+    "no_log": "Kein Log verfügbar",
+
+    "category_exists": "Kategorie existiert bereits",
+    "subcategory_exists": "Unterkategorie existiert bereits",
+    "action_exists": "Aktion existiert bereits",
+    "tag_exists": "Tag existiert bereits",
+    "customer_exists": "Kunde existiert bereits",
+
+    "select_category": "Bitte zuerst eine Kategorie wählen",
+    "select_category_subcategory": "Kategorie und Unterkategorie auswählen",
+
+    "on": "AN",
+    "off": "AUS"
+  },
+  "🇪🇸 Español": {
+    "tab_log": "Crear registro",
+    "tab_history": "Historial",
+    "tab_settings": "Configuración",
+
+    "customer": "Cliente",
+    "customer_placeholder": "Nombre del cliente...",
+    "config_editor": "⚙️ Editor de configuración ⚙️ ",
+    "type": "Tipo",
+    "title": "Título",
+    "category": "Categoría",
+    "subcategory": "Subcategoría",
+
+    "search": "Buscar acciones",
+    "suggestions": "Sugerencias",
+
+    "notes": "Notas",
+    "links": "Enlaces",
+
+    "generate": "Generar",
+    "generated_log": "Registro generado",
+    "copy_save": "Copiar + Guardar",
+    "export": "Exportar",
+    "clear": "Limpiar",
+    "add": "➕ Añadir",
+    "pin": "⭐ Favorito",
+
+    "actions": "Acciones",
+    "always_on_top": "📌 Siempre visible",
+    "autosave": "💾 Guardado automático",
+    "open_config": "⚙️ Abrir editor de configuración",
+    "language": "🌍 Idioma",
+    "theme": "🎨 Tema",
+    "theme_light": "Claro",
+    "theme_dark": "Oscuro",
+    "theme_hacker": "Hacker",
+    "theme_blue": "Azul",
+    "theme_green": "Verde",
+    "theme_pink": "Rosa",
+
+    "error": "Error",
+    "config_missing": "¡Falta config.json!",
+    "config_save_error": "No se puede guardar la configuración",
+
+    "category_exists": "La categoría ya existe",
+    "no_customer": "¡Ningún cliente seleccionado!",
+    "no_log_available": "No hay registro disponible para copiar",
+
+    "categories": "Categorías",
+    "subcategories": "Subcategorías",
+    "customers": "Clientes",
+    "tags": "Etiquetas",
+    "new_action": "Nueva acción",
+    "add_category": "➕ Añadir categoría",
+    "remove_category": "❌ Eliminar categoría",
+
+    "add_subcategory": "➕ Añadir subcategoría",
+    "remove_subcategory": "❌ Eliminar subcategoría",
+
+    "add_action": "➕ Añadir acción",
+    "remove_action": "❌ Eliminar acción",
+
+    "add_customer": "➕ Añadir cliente",
+    "remove_customer": "❌ Eliminar cliente",
+
+    "add_link": "➕ Añadir enlace",
+    "remove_link": "❌ Eliminar enlace",
+
+    "add_tag": "➕ Añadir etiqueta",
+    "remove_tag": "❌ Eliminar etiqueta",
+
+    "new_category": "Nueva categoría",
+    "new_subcategory": "Nueva subcategoría",
+    "new_customer": "Nuevo cliente",
+    "new_tag": "Nueva etiqueta",
+
+    "search_customer": "🔍 Buscar cliente...",
+    "link_name": "Nombre del enlace",
+    "link_url": "URL del enlace",
+
+    "exists": "Ya existe",
+    "already_exists": "Ya existe",
+    "select_category": "Seleccione una categoría primero",
+    "select_category_sub": "Seleccione categoría y subcategoría",
+    "warning": "Advertencia",
+    "no_customer": "¡Ningún cliente seleccionado!",
+    "no_log": "No hay registros disponibles",
+
+    "category_exists": "La categoría ya existe",
+    "subcategory_exists": "La subcategoría ya existe",
+    "action_exists": "La acción ya existe",
+    "tag_exists": "La etiqueta ya existe",
+    "customer_exists": "El cliente ya existe",
+
+    "select_category": "Seleccione una categoría primero",
+    "select_category_subcategory": "Seleccione categoría y subcategoría",
+
+    "on": "ON",
+    "off": "OFF"
+  },
+    "👾 l33t": {
+      "tab_log": "109 8u11d32",
+      "tab_history": "h15702y",
+      "tab_settings": "53771n95",
+
+      "customer": "cu570m32",
+      "customer_placeholder": "cu570m32 n4m3...",
+      "config_editor": "⚙️ c0nf19 3d1702 ⚙️ ",
+      "type": "7yp3",
+      "title": "71713",
+      "category": "c473902y",
+      "subcategory": "5u8c473902y",
+
+      "search": "5342ch 4c710n5",
+      "suggestions": "5u9935710n5",
+
+      "notes": "n0735",
+      "links": "11nk5",
+
+      "generate": "93n32473",
+      "generated_log": "109 93n32473d",
+      "copy_save": "c0py + 54v3",
+      "export": "3xp027",
+      "clear": "c1342",
+      "add": "➕ 4dd",
+      "pin": "⭐ p1n",
+
+      "actions": "4c710n5",
+      "always_on_top": "📌 41w4y5 0n 70p",
+      "autosave": "💾 4u70-54v3",
+      "open_config": "⚙️ 0p3n c0nf19 3d1702",
+      "language": "🌍 14n9u493",
+      "theme": "🎨 7h3m3",
+      "theme_light": "119h7",
+      "theme_dark": "d42k",
+      "theme_hacker": "h4ck32",
+      "theme_blue": "81u3",
+      "theme_green": "9233n",
+      "theme_pink": "p1nk",
+      "error": "32202",
+      "config_missing": "c0nf19.j50n 15 m1551n9!",
+      "config_save_error": "c0nf19 c4n'7 83 54v3d",
+
+      "category_exists": "c473902y 41234dy 3x1575",
+      "no_customer": "n0 cu570m32 5313c73d!",
+      "no_log_available": "n0 109 4v4114813 70 c0py",
+
+
+      "categories": "c473902135",
+      "subcategories": "5u8c473902135",
+      "customers": "cu570m325",
+      "tags": "7495",
+      "new_action": "n3w 4c710n",
+      "add_category": "➕ 4dd c473902y",
+      "remove_category": "❌ 23m0v3 c473902y",
+
+      "add_subcategory": "➕ 4dd 5u8c473902y",
+      "remove_subcategory": "❌ 23m0v3 5u8c473902y",
+
+      "add_action": "➕ 4dd 4c710n",
+      "remove_action": "❌ 23m0v3 4c710n",
+
+      "add_customer": "➕ 4dd cu570m32",
+      "remove_customer": "❌ 23m0v3 cu570m32",
+
+      "add_link": "➕ 4dd 11nk",
+      "remove_link": "❌ 23m0v3 11nk",
+
+      "add_tag": "➕ 4dd 749",
+      "remove_tag": "❌ 23m0v3 749",
+
+      "new_category": "n3w c473902y",
+      "new_subcategory": "n3w 5u8c473902y",
+      "new_customer": "n3w cu570m32",
+      "new_tag": "n3w 749",
+
+      "search_customer": "🔍 5342ch cu570m32...",
+      "link_name": "11nk n4m3",
+      "link_url": "11nk url",
+
+      "exists": "4l234dy 3x1575",
+      "already_exists": "4l234dy 3x1575",
+      "select_category": "5313c7 c473902y f1257",
+      "select_category_sub": "5313c7 c47 + 5u8",
+      "warning": "w42n1n9",
+      "no_customer": "n0 cu570m32!",
+      "no_log": "n0 109",
+      "exists": "3x1575",
+      "error": "32202",
+
+      "category_exists": "c473902y 4l234dy 3x1575",
+      "subcategory_exists": "5u8c473902y 4l234dy 3x1575",
+      "action_exists": "4c710n 4l234dy 3x1575",
+      "tag_exists": "749 4l234dy 3x1575",
+      "customer_exists": "cu570m32 4l234dy 3x1575",
+
+      "select_category": "5313c7 c473902y f1257",
+      "select_category_subcategory": "5313c7 c473902y 4nd 5u8c473902y",
+      "on": "0N",
+      "off": "OFF"
+    },
+    "🏴‍☠️ Pirate": {
+      "tab_log": "Captain's Log",
+      "tab_history": "Ship's History",
+      "tab_settings": "Captain's Orders",
+      "config_editor": "⚙️ Captain's Chest ⚙️ ",
+      "customer": "Scallywag",
+      "customer_placeholder": "Name o' the scallywag...",
+
+      "type": "Voyage Type",
+      "title": "Tale Title",
+      "category": "Treasure Type",
+      "subcategory": "Treasure Detail",
+
+      "search": "Search yer deeds",
+      "suggestions": "Crew Suggestions",
+
+      "notes": "Captain's Notes",
+      "links": "Treasure Maps",
+
+      "generate": "Spin the Tale",
+      "generated_log": "Log be written!",
+      "copy_save": "Copy & Stash",
+      "export": "Send Parrot",
+      "clear": "Wipe the Deck",
+      "add": "➕ Add Booty",
+      "pin": "⭐ Mark as Treasure",
+
+      "actions": "Deeds",
+      "always_on_top": "📌 Float Above Seas",
+      "autosave": "💾 Auto-Stash",
+      "open_config": "⚙️ Open Captain's Chest",
+      "language": "🌍 Tongue",
+      "theme": "🎨 Ship Style",
+      "theme_light": "Calm Seas",
+      "theme_dark": "Stormy Night",
+      "theme_hacker": "Ghost Ship",
+      "theme_blue": "Deep Ocean",
+      "theme_green": "Seaweed",
+      "theme_pink": "Mermaid Glow",
+
+      "error": "Arrr! Trouble!",
+      "config_missing": "config.json be lost at sea!",
+      "config_save_error": "Can't stash the config, matey!",
+
+      "category_exists": "Arr! Category be existin' already",
+      "no_customer": "Avast! No customer selected!",
+      "no_log_available": "Shiver me timbers! No log to copy",
+
+      "categories": "Treasure Types",
+      "subcategories": "Treasure Details",
+      "customers": "Scallywags",
+      "tags": "Marks",
+      "new_action": "New deed",
+      "add_category": "➕ Add Treasure",
+      "remove_category": "❌ Toss Treasure",
+
+      "add_subcategory": "➕ Add Detail",
+      "remove_subcategory": "❌ Remove Detail",
+
+      "add_action": "➕ Add Deed",
+      "remove_action": "❌ Remove Deed",
+
+      "add_customer": "➕ Add Scallywag",
+      "remove_customer": "❌ Throw Overboard",
+
+      "add_link": "➕ Add Map",
+      "remove_link": "❌ Burn Map",
+
+      "add_tag": "➕ Add Mark",
+      "remove_tag": "❌ Remove Mark",
+
+      "new_category": "New treasure",
+      "new_subcategory": "New detail",
+      "new_customer": "New scallywag",
+      "new_tag": "New mark",
+
+      "search_customer": "🔍 Find scallywag...",
+      "link_name": "Map name",
+      "link_url": "Map route",
+
+      "exists": "Already plundered",
+      "already_exists": "Already plundered",
+      "select_category": "Pick yer treasure first!",
+      "select_category_sub": "Pick treasure & detail, matey!",
+      "warning": "⚠️ Beware!",
+      "no_customer": "No scallywag chosen!",
+      "no_log": "No tale to tell",
+
+      "category_exists": "Treasure already claimed",
+      "subcategory_exists": "Detail already claimed",
+      "action_exists": "Deed already done",
+      "tag_exists": "Mark already carved",
+      "customer_exists": "Scallywag already aboard",
+
+      "select_category": "Choose a treasure first!",
+      "select_category_subcategory": "Choose treasure and detail!",
+      "on": "AYE",
+      "off": "NAY"
+    },
+    "💼 Corporate Buzzword": {
+      "tab_log": "Workflow Builder",
+      "tab_history": "Activity Timeline",
+      "tab_settings": "Configuration Hub",
+
+      "customer": "Client Entity",
+      "customer_placeholder": "Enter client stakeholder...",
+
+      "type": "Request Type",
+      "title": "Executive Summary",
+      "category": "Operational Domain",
+      "subcategory": "Sub-Domain",
+
+      "search": "Search actionables",
+      "suggestions": "AI-Driven Recommendations",
+
+      "notes": "Strategic Notes",
+      "links": "Resource Links",
+
+      "generate": "Generate Deliverable",
+      "generated_log": "Deliverable Generated",
+      "copy_save": "Copy & Persist",
+      "export": "Export Asset",
+      "clear": "Reset Workspace",
+      "add": "➕ Add Value",
+      "pin": "⭐ Prioritize",
+      "config_editor": "⚙️ Configuration Suite ⚙️ ",
+      "actions": "Actionables",
+      "always_on_top": "📌 Executive Visibility Mode",
+      "autosave": "💾 Continuous Persistence",
+      "open_config": "⚙️ Open Configuration Suite",
+      "language": "🌍 Localization Strategy",
+      "theme": "🎨 Visual Identity",
+      "theme_light": "Light Mode",
+      "theme_dark": "Dark Mode",
+      "theme_hacker": "Cyber Ops Mode",
+      "theme_blue": "Enterprise Blue",
+      "theme_green": "Growth Green",
+      "theme_pink": "Disruptive Pink",
+
+      "error": "Critical Exception",
+      "config_missing": "Configuration asset missing!",
+      "config_save_error": "Failed to persist configuration",
+
+      "category_exists": "Synergy: Category already leveraged",
+      "no_customer": "Stakeholder not selected!",
+      "no_log_available": "Log asset currently unavailable for extraction",
+
+      "categories": "Domains",
+      "subcategories": "Sub-Domains",
+      "customers": "Client Portfolio",
+      "tags": "Metadata Tags",
+      "new_action": "New actionable",
+      "add_category": "➕ Add Domain",
+      "remove_category": "❌ Remove Domain",
+
+      "add_subcategory": "➕ Add Sub-Domain",
+      "remove_subcategory": "❌ Remove Sub-Domain",
+
+      "add_action": "➕ Add Actionable",
+      "remove_action": "❌ Remove Actionable",
+
+      "add_customer": "➕ Onboard Client",
+      "remove_customer": "❌ Offboard Client",
+
+      "add_link": "➕ Add Resource",
+      "remove_link": "❌ Remove Resource",
+
+      "add_tag": "➕ Add Metadata",
+      "remove_tag": "❌ Remove Metadata",
+
+      "new_category": "New domain",
+      "new_subcategory": "New sub-domain",
+      "new_customer": "New client entity",
+      "new_tag": "New metadata",
+
+      "search_customer": "🔍 Search client portfolio...",
+      "link_name": "Resource name",
+      "link_url": "Resource URL",
+
+      "exists": "Already aligned",
+      "already_exists": "Already aligned",
+      "select_category": "Align domain first",
+      "select_category_sub": "Align domain & sub-domain",
+      "warning": "Risk Notification",
+      "no_customer": "No client entity selected!",
+      "no_log": "No deliverable available",
+
+      "category_exists": "Domain already exists",
+      "subcategory_exists": "Sub-domain already exists",
+      "action_exists": "Actionable already exists",
+      "tag_exists": "Metadata already exists",
+      "customer_exists": "Client already onboarded",
+
+      "select_category": "Select a domain first",
+      "select_category_subcategory": "Select domain and sub-domain",
+
+      "on": "ENABLED",
+      "off": "DISABLED"
+    },
+    "🧠 Hacker": {
+      "tab_log": "Exploit Builder",
+      "tab_history": "Operation Logs",
+      "tab_settings": "Control Panel",
+
+      "customer": "Target",
+      "customer_placeholder": "Enter target identifier...",
+
+      "type": "Operation Type",
+      "title": "Mission Brief",
+      "category": "Attack Vector",
+      "subcategory": "Exploit Path",
+
+      "search": "Search payloads",
+      "suggestions": "Auto-Recon Suggestions",
+
+      "notes": "Recon Notes",
+      "links": "Resources / Endpoints",
+
+      "generate": "Execute Log",
+      "generated_log": "Payload Generated",
+      "copy_save": "Dump & Save",
+      "export": "Exfiltrate",
+      "clear": "Wipe Session",
+      "add": "➕ Inject",
+      "pin": "⭐ Flag",
+      "config_editor": "⚙️ Control Matrix ⚙️ ",
+      "actions": "Payloads",
+      "always_on_top": "📌 Root Access Mode",
+      "autosave": "💾 Auto-Dump Enabled",
+      "open_config": "⚙️ Open Control Matrix",
+      "language": "🌍 Interface Protocol",
+      "theme": "🎨 Visual Mode",
+      "theme_light": "Plaintext",
+      "theme_dark": "Darknet",
+      "theme_hacker": "Matrix",
+      "theme_blue": "Blue Screen",
+      "theme_green": "Terminal Green",
+      "theme_pink": "Neon Glitch",
+
+      "error": "Critical Failure",
+      "config_missing": "config.json not found — system compromised",
+      "config_save_error": "Failed to write config — permission denied",
+
+      "category_exists": "[!] CATEGORY ALREADY IN SYSTEM",
+      "no_customer": "[!] NO TARGET SELECTED",
+      "no_log_available": "[!] LOG MISSING OR UNACCESSIBLE",
+
+      "categories": "Vectors",
+      "subcategories": "Paths",
+      "customers": "Targets",
+      "tags": "Signatures",
+      "new_action": "New payload",
+      "add_category": "➕ Add Vector",
+      "remove_category": "❌ Remove Vector",
+
+      "add_subcategory": "➕ Add Path",
+      "remove_subcategory": "❌ Remove Path",
+
+      "add_action": "➕ Add Payload",
+      "remove_action": "❌ Remove Payload",
+
+      "add_customer": "➕ Add Target",
+      "remove_customer": "❌ Remove Target",
+
+      "add_link": "➕ Add Endpoint",
+      "remove_link": "❌ Remove Endpoint",
+
+      "add_tag": "➕ Add Signature",
+      "remove_tag": "❌ Remove Signature",
+
+      "new_category": "New vector",
+      "new_subcategory": "New path",
+      "new_customer": "New target",
+      "new_tag": "New signature",
+
+      "search_customer": "🔍 Scan targets...",
+      "link_name": "Endpoint name",
+      "link_url": "Endpoint URL",
+
+      "exists": "Already injected",
+      "already_exists": "Already injected",
+      "select_category": "Select vector first",
+      "select_category_sub": "Select vector and path",
+      "warning": "Alert",
+      "no_customer": "No target selected!",
+      "no_log": "No payload available",
+
+      "category_exists": "Vector already exists",
+      "subcategory_exists": "Path already exists",
+      "action_exists": "Payload already exists",
+      "tag_exists": "Signature already exists",
+      "customer_exists": "Target already exists",
+
+      "select_category": "Select vector first",
+      "select_category_subcategory": "Select vector and path",
+
+      "on": "ENABLED",
+      "off": "DISABLED"
+    }
+}

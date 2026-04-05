@@ -1,0 +1,18 @@
+{
+  "theme": "Light",
+  "always_on_top": true,
+  "autosave": true,
+  "language": "\ud83c\uddeb\ud83c\uddf7 Fran\u00e7ais",
+  "main_pos": {
+    "x": 0,
+    "y": 25,
+    "width": 650,
+    "height": 847
+  },
+  "config_editor_pos": {
+    "x": 120,
+    "y": 25,
+    "width": 1200,
+    "height": 682
+  }
+}

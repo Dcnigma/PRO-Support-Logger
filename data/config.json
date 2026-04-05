@@ -1,0 +1,224 @@
+{
+  "categories": {
+    "Onboarding": {
+      "General": {
+        "actions": [
+          {
+            "name": "Account created",
+            "favorite": true,
+            "tags": [
+              "Onboarding",
+              "General"
+            ]
+          },
+          {
+            "name": "Mailbox set up",
+            "favorite": false,
+            "tags": [
+              "Onboarding",
+              "General"
+            ]
+          },
+          {
+            "name": "Welcome email sent",
+            "favorite": true,
+            "tags": [
+              "Onboarding"
+            ]
+          },
+          {
+            "name": "Provided explanation on working with Mac",
+            "favorite": false,
+            "tags": [
+              "Onboarding"
+            ]
+          },
+          {
+            "name": "Looked along with TeamViewer",
+            "favorite": false,
+            "tags": [
+              "Onboarding"
+            ]
+          }
+        ],
+        "template": {
+          "actions": [
+            "Account created"
+          ],
+          "notes": "Onboarding actions performed"
+        }
+      }
+    },
+    "Support": {
+      "Printer": {
+        "actions": [
+          {
+            "name": "Printer reinstalled",
+            "favorite": false,
+            "tags": [
+              "Support",
+              "Printer"
+            ]
+          },
+          {
+            "name": "Test Print made",
+            "favorite": true,
+            "tags": [
+              "Support",
+              "Printer"
+            ]
+          },
+          {
+            "name": "Not OK",
+            "favorite": false,
+            "tags": [
+              "Support",
+              "Printer"
+            ]
+          },
+          {
+            "name": "Print job successful",
+            "favorite": false,
+            "tags": [
+              "Support",
+              "Printer"
+            ]
+          },
+          {
+            "name": "Print ok",
+            "favorite": false,
+            "tags": [
+              "Support",
+              "Printer"
+            ]
+          }
+        ],
+        "template": {
+          "actions": [],
+          "notes": ""
+        }
+      }
+    },
+    "Server": {
+      "User management": {
+        "actions": [
+          {
+            "name": "User created",
+            "favorite": false,
+            "tags": [
+              "Server",
+              "User management"
+            ]
+          },
+          {
+            "name": "Server added to Finder",
+            "favorite": false,
+            "tags": [
+              "Server",
+              "User management"
+            ]
+          },
+          {
+            "name": "Via cmd+k connection made",
+            "favorite": false,
+            "tags": [
+              "Server",
+              "User management"
+            ]
+          },
+          {
+            "name": "Watched along via TeamViewer",
+            "favorite": false,
+            "tags": [
+              "Server",
+              "User management"
+            ]
+          }
+        ],
+        "template": {
+          "actions": [],
+          "notes": ""
+        }
+      }
+    },
+    "User Support": {
+      "MS360/Google Workspace": {
+        "actions": [
+          {
+            "name": "Software reinstalled",
+            "favorite": false,
+            "tags": [
+              "User Support",
+              "MS360/Google Workspace"
+            ]
+          }
+        ],
+        "template": {
+          "actions": [],
+          "notes": ""
+        }
+      }
+    },
+    "Voip": {
+      "No service": {
+        "actions": [
+          {
+            "name": "Phone restart",
+            "favorite": false,
+            "tags": [
+              "Voip",
+              "No service"
+            ]
+          },
+          {
+            "name": "Phone reconfigured",
+            "favorite": false,
+            "tags": [
+              "Voip",
+              "No service"
+            ]
+          },
+          {
+            "name": "Network cable connected",
+            "favorite": false,
+            "tags": [
+              "Voip",
+              "No service"
+            ]
+          }
+        ],
+        "template": {
+          "actions": [],
+          "notes": ""
+        }
+      }
+    }
+  },
+  "customers": {
+    "Demo Customer": {
+      "links": [
+        {
+          "name": "Onboarding Document",
+          "url": "https://Link.to/the_onboarding_document/",
+          "tags": [
+            "Onboarding"
+          ],
+          "customer_specific": false
+        }
+      ],
+      "used_categories": []
+    },
+    "Demo Customer 2": {
+      "links": [],
+      "used_categories": []
+    },
+    "Demo Customer 3": {
+      "links": [],
+      "used_categories": []
+    },
+    "Demo Customer 4": {
+      "links": [],
+      "used_categories": []
+    }
+  }
+}
