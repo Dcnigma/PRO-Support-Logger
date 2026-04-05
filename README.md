@@ -100,7 +100,7 @@ pro-support-logger/
 
 <img src="https://raw.githubusercontent.com/Dcnigma/PRO-Support-Logger/refs/heads/main/Screenshots/UI.png" width=50% height=50%>
 
-**Theme's**
+**Themes**
 
 <img src="https://raw.githubusercontent.com/Dcnigma/PRO-Support-Logger/refs/heads/main/Screenshots/Pro_Support_Loggin_skins.gif" width=50% height=50%>
 
