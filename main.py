@@ -414,15 +414,81 @@ class SupportLogger(QWidget):
     def build_history_tab(self):
         self.tab2 = QWidget()
         layout = QVBoxLayout()
+
+        # --- SEARCH ---
+        self.history_search_input = QLineEdit()
+        self.history_search_input.setPlaceholderText(self.t("search_history"))
+        layout.addWidget(self.history_search_input)
+
+        # --- LIST ---
         self.history_list = QListWidget()
         layout.addWidget(self.history_list)
-        for log in self.history_logs:
-            ts = log.get("timestamp","")
-            cust = log.get("customer","")
-            title = log.get("title","")
-            self.history_list.addItem(f"[{ts}] {cust} - {title}")
+
+        # Populate
+        self.refresh_history_list()
+
+        # --- BUTTONS ---
+        btn_layout = QHBoxLayout()
+        btn_layout.addStretch()
+
+        self.remove_log_btn = QPushButton()
+        self.export_logs_btn = QPushButton()
+
+        btn_layout.addWidget(self.remove_log_btn)
+        btn_layout.addWidget(self.export_logs_btn)
+        btn_layout.addStretch()
+
+        layout.addLayout(btn_layout)
+
         self.tab2.setLayout(layout)
         self.tabs.addTab(self.tab2, "History")
+        self.update_history_completer()
+        
+    def remove_selected_log(self):
+        row = self.history_list.currentRow()
+
+        if row < 0:
+            QMessageBox.warning(self, self.t("warning"), self.t("no_log_selected"))
+            return
+
+        confirm = QMessageBox.question(
+            self,
+            self.t("confirm"),
+            self.t("confirm_delete_log"),
+            QMessageBox.Yes | QMessageBox.No
+        )
+
+        if confirm == QMessageBox.Yes:
+            self.history_list.takeItem(row)
+            self.history_logs.pop(row)
+            self.save_history()
+
+    def export_all_logs(self):
+        if not self.history_logs:
+            QMessageBox.warning(self, self.t("warning"), self.t("no_logs_available"))
+            return
+
+        path, _ = QFileDialog.getSaveFileName(
+            self,
+            self.t("export_logs"),
+            "",
+            "Text Files (*.txt)"
+        )
+
+        if not path:
+            return
+
+        with open(path, "w", encoding="utf-8") as f:
+            for log in self.history_logs:
+                f.write(
+                    f"[{log['timestamp']}] {log['customer']} - {log['type']} - {log['title']}\n"
+                )
+                f.write(f"Categorie: {log['category']} / {log['subcategory']}\n\n")
+                f.write("Acties:\n" + "\n".join(f"- {a}" for a in log["actions"]) + "\n\n")
+                f.write(f"Notities:\n{log['notes']}\n")
+                f.write("\n" + "-" * 50 + "\n\n")
+
+        QMessageBox.information(self, self.t("export"), self.t("export_success"))
 
     def build_settings_tab(self):
         self.tab3 = QWidget()
@@ -525,6 +591,10 @@ class SupportLogger(QWidget):
         self.selected_list.itemDoubleClicked.connect(self.quick_remove_action)
         self.add_new_action_btn.clicked.connect(self.add_new_action)
         self.new_action_input.returnPressed.connect(self.add_new_action)
+
+        self.remove_log_btn.clicked.connect(self.remove_selected_log)
+        self.export_logs_btn.clicked.connect(self.export_all_logs)
+        self.history_search_input.textChanged.connect(self.filter_history)
 
     # ------------------------
     # CUSTOMER EVENTS
@@ -692,10 +762,14 @@ class SupportLogger(QWidget):
         self.add_new_action_btn.setText(self.t("add"))
         self.pin_btn.setText(self.t("pin"))
 
+        self.remove_log_btn.setText(self.t("remove_log"))
+        self.export_logs_btn.setText(self.t("export_logs"))
+
         # Placeholders
         self.customer_input.setPlaceholderText(self.t("customer_placeholder"))
         self.new_action_input.setPlaceholderText(self.t("new_action"))
 
+        self.history_search_input.setPlaceholderText(self.t("search_history"))
         # Settings
         always_on_top = self.settings.get("always_on_top", True)
         autosave = self.settings.get("autosave", True)
@@ -721,6 +795,9 @@ class SupportLogger(QWidget):
         index = self.theme_combo.findData(current_theme)
         if index >= 0:
             self.theme_combo.setCurrentIndex(index)
+
+        self.filter_history()
+
 
     def build_log(self):
         cust = self.customer_input.text().strip()
@@ -806,6 +883,62 @@ class SupportLogger(QWidget):
 
         # Learning
         self.learn_from_actions()
+
+    def refresh_history_list(self, filtered_logs=None):
+        self.history_list.clear()
+
+        logs = filtered_logs if filtered_logs is not None else self.history_logs
+
+        for log in logs:
+            self.history_list.addItem(
+                f"[{log['timestamp']}] {log['customer']} - {log['title']}"
+            )
+
+    def filter_history(self):
+        query = self.history_search_input.text().lower().strip()
+
+        if not query:
+            self.refresh_history_list()
+            return
+
+        scored_logs = []
+
+        for log in self.history_logs:
+            score = 0
+
+            # Fields to search
+            fields = [
+                log.get("customer", ""),
+                log.get("title", ""),
+                log.get("category", ""),
+                log.get("subcategory", ""),
+                " ".join(log.get("actions", [])),
+                log.get("notes", "")
+            ]
+            self.t(log.get("category"))
+            combined = " ".join(fields).lower()
+
+            # --- substring match ---
+            if query in combined:
+                score += 10
+
+            # --- word matches ---
+            for word in query.split():
+                if word in combined:
+                    score += 5
+
+            # --- bonus: recent logs ---
+            score += 1  # keeps ordering stable
+
+            if score > 0:
+                scored_logs.append((score, log))
+
+        # Sort by score DESC
+        scored_logs.sort(key=lambda x: x[0], reverse=True)
+
+        filtered = [log for _, log in scored_logs]
+
+        self.refresh_history_list(filtered)
 
     def export_log(self):
         if not hasattr(self, "log_window"):
@@ -1034,6 +1167,16 @@ class SupportLogger(QWidget):
         if self.category_box.count() > 0:
             self.category_box.setCurrentIndex(0)
             self.update_subcategories()
+
+    def update_history_completer(self):
+        items = []
+
+        for log in self.history_logs:
+            items.append(log.get("customer", ""))
+            items.append(log.get("title", ""))
+
+        completer = SubstringCompleter(list(set(items)))
+        self.history_search_input.setCompleter(completer)
 
 
 if __name__=="__main__":
