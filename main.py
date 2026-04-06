@@ -721,20 +721,23 @@ class SupportLogger(QWidget):
         index = self.theme_combo.findData(current_theme)
         if index >= 0:
             self.theme_combo.setCurrentIndex(index)
-    # ------------------------
-    # LOG GENERATION
-    # ------------------------
-    def generate_log(self):
-        cust = self.customer_input.text()
+
+    def build_log(self):
+        cust = self.customer_input.text().strip()
         if not cust:
             QMessageBox.warning(self, self.t("warning"), self.t("no_customer"))
-            return
+            return None, None
+
         self.add_customer_if_new(cust)
+
         type_ = self.type_box.currentText()
         title = self.title_input.text()
         category = self.category_box.currentText()
         subcategory = self.subcategory_box.currentText()
-        actions = [self.selected_list.item(i).text().lstrip("⭐ ") for i in range(self.selected_list.count())]
+        actions = [
+            self.selected_list.item(i).text().lstrip("⭐ ")
+            for i in range(self.selected_list.count())
+        ]
         notes = self.notes_input.toPlainText()
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
@@ -743,7 +746,6 @@ class SupportLogger(QWidget):
         log_text += "Acties:\n" + "\n".join(f"- {a}" for a in actions) + "\n\n"
         log_text += f"Notities:\n{notes}\n"
 
-        # Add to history
         log_entry = {
             "timestamp": timestamp,
             "customer": cust,
@@ -755,35 +757,54 @@ class SupportLogger(QWidget):
             "notes": notes
         }
 
-        self.history_list.addItem(f"[{timestamp}] {cust} - {title}")
+        return log_text, log_entry
+
+    # ------------------------
+    # LOG GENERATION
+    # ------------------------
+    def generate_log(self):
+        log_text, log_entry = self.build_log()
+
+        if not log_text:
+            return
+
+        # History
         self.history_logs.append(log_entry)
-        #self.save_history()
+        self.history_list.addItem(
+            f"[{log_entry['timestamp']}] {log_entry['customer']} - {log_entry['title']}"
+        )
+        self.save_history()
+
         self.search_input.clear()
 
-        # Show in new window
+        # Window
         win = LogWindow(log_text, self.t)
         win.show()
         self.open_logs.append(win)
 
-        # Auto-save learning
+        # Learning
         if self.autosave_checkbox.isChecked():
-            self.update_learning(cust, actions)
+            self.update_learning(log_entry["customer"], log_entry["actions"])
 
     def copy_to_clipboard(self):
-        self.generate_log()
-        if not self.open_logs:
-            QMessageBox.warning(self, self.t("warning"), self.t("no_log_available"))
+        log_text, log_entry = self.build_log()
+
+        if not log_text:
             return
 
-        last_log = self.open_logs[-1]
+        # Copy meteen (geen dependency op window!)
+        QGuiApplication.clipboard().setText(log_text)
 
-        cust_name = self.customer_input.text().strip()
-        self.add_customer_if_new(cust_name)
-
-        QGuiApplication.clipboard().setText(last_log.log_view.toPlainText())
+        # History
+        self.history_logs.append(log_entry)
+        self.history_list.addItem(
+            f"[{log_entry['timestamp']}] {log_entry['customer']} - {log_entry['title']}"
+        )
+        self.save_history()
 
         QMessageBox.information(self, "Info", self.t("copied"))
 
+        # Learning
         self.learn_from_actions()
 
     def export_log(self):
