@@ -104,7 +104,7 @@ class SupportLogger(QWidget):
         except:
             self.languages = {}
 
-        self.current_lang = self.settings.get("language", "🇳🇱 Nederlands")
+        self.current_lang = self.settings.get("language", "🇬🇧 Engels")
 
 
     def t(self, key):
@@ -440,7 +440,7 @@ class SupportLogger(QWidget):
         self.language_combo.addItems(["🇳🇱 Nederlands", "🇬🇧 Engels","🇫🇷 Français","🇩🇪 Deutsch","🇪🇸 Español","🧠 Hacker","👾 l33t","🏴‍☠️ Pirate","💼 Corporate Buzzword"])
         layout.addWidget(self.language_combo)
 
-        self.language_combo.setCurrentText(self.settings.get("language", "🇳🇱 Nederlands"))
+        self.language_combo.setCurrentText(self.settings.get("language", "🇬🇧 Engels"))
         self.language_combo.currentTextChanged.connect(self.change_language)
 
         # Theme Selector
