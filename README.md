@@ -31,7 +31,7 @@
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/pro-support-logger.git
+git clone https://github.com/Dcnigma/PRO-Support-Logger.git
 cd pro-support-logger
 Install dependencies
 pip install PySide6
